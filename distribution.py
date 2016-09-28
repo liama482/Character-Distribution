@@ -1,13 +1,12 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Liam A
+Credit: 
 
 Assignment:
 
 Write and submit a Python program (distribution.py) that computes and displays 
 the distribution of characters in a given sample of text.
-
 Output of your program should look like this:
 
 Please enter a string of text (the bigger the better): The rain in Spain stays mainly in the plain.
@@ -36,3 +35,9 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+
+txt=input("Please enter a string of text (the bigger the better): ")
+txt2='"'+str(txt)+'"'
+print('The distribution of characters in '+txt2+' is')
+
+#well...
