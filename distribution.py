@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Liam A
-Credit: 
+Credit: http://stackoverflow.com/questions/16060899/alphabet-range-python
 
 Assignment:
 
@@ -36,8 +36,11 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 
+import string
 txt=input("Please enter a string of text (the bigger the better): ")
 txt2='"'+str(txt)+'"'
-print('The distribution of characters in '+txt2+' is')
+print('The distribution of characters in '+txt2+' is:')
 
-#well...
+alphabet=list(string.ascii_lowercase)
+for vy in range (1,26):
+    nm=txt.count(alphabet[vy])
