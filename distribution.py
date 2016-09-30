@@ -40,11 +40,25 @@ import string
 txt=input("Please enter a string of text (the bigger the better): ")
 txt2='"'+str(txt)+'"'
 print('The distribution of characters in '+txt2+' is:')
+appear = []
+wappee = []
+
+"""
+appear.append("b")
+appear.append("c")
+appear.append("a")
+print(list(appear))
+"""
 
 alphabet=list(string.ascii_lowercase)
 for vy in range (0,26):
     nm=txt.count(alphabet[vy])
     if nm!=0:
-        for ki in range (0,nm):
-            print(alphabet[vy],  end='')
-        print(' ')
+        #for ki in range (0,nm):
+            #print(alphabet[vy],  end='')
+        appear.append(nm)
+        wappee.append(alphabet[vy])
+
+print(list(appear))
+print(list(wappee))
+#print(' ')
