@@ -1,7 +1,8 @@
 """
 distribution.py
 Author: Liam A
-Credit: http://stackoverflow.com/questions/16060899/alphabet-range-python
+Credit: http://stackoverflow.com/questions/16060899/alphabet-range-python,
+http://stackoverflow.com/questions/1712227/how-to-get-the-size-of-a-list
 
 Assignment:
 
@@ -34,6 +35,8 @@ Notice about this example:
   For example, in the printout above, the letters e, h, l, p and y both occur twice 
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
+
+"whooaa wah whohoho yeah well I got abbacedaga you just have a family cause moolaakayrassa quack!"
 """
 
 import string
@@ -54,11 +57,17 @@ alphabet=list(string.ascii_lowercase)
 for vy in range (0,26):
     nm=txt.count(alphabet[vy])
     if nm!=0:
-        #for ki in range (0,nm):
-            #print(alphabet[vy],  end='')
         appear.append(nm)
         wappee.append(alphabet[vy])
+whiir=int(len(appear))
 
-print(list(appear))
-print(list(wappee))
-#print(' ')
+tupps = zip((list(wappee)),(list(appear)))
+print(list(tupps))
+bupps = tupps.sort()
+print(list(bupps))
+"""
+for s in range (0,whiir):
+        tupps.appendfor r in range (0,appear[s]):
+            print(wappee[s],  end='')
+        print(' ')
+"""
