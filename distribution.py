@@ -44,3 +44,5 @@ print('The distribution of characters in '+txt2+' is:')
 alphabet=list(string.ascii_lowercase)
 for vy in range (1,26):
     nm=txt.count(alphabet[vy])
+    for ki in range (1,nm):
+        print(alphabet[vy])
