@@ -42,7 +42,10 @@ txt2='"'+str(txt)+'"'
 print('The distribution of characters in '+txt2+' is:')
 
 alphabet=list(string.ascii_lowercase)
-for vy in range (1,26):
+for vy in range (0,26):
     nm=txt.count(alphabet[vy])
-    for ki in range (1,nm):
-        print(alphabet[vy])
+    if nm!=0:
+        for ki in range (1,nm):
+            print(alphabet[vy],  end='')
+        print(' ')
+    
