@@ -45,7 +45,6 @@ alphabet=list(string.ascii_lowercase)
 for vy in range (0,26):
     nm=txt.count(alphabet[vy])
     if nm!=0:
-        for ki in range (1,nm):
+        for ki in range (0,nm):
             print(alphabet[vy],  end='')
         print(' ')
-    
