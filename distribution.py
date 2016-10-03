@@ -64,7 +64,7 @@ whiir=int(len(appear))
 tupps = zip((list(appear)),(list(wappee)))
 Ltup = list(tupps)
 print(Ltup)
-Ltup.sorted([none[none[true]]])
+#Ltup.sorted([none[none[true]]])
 print(Ltup)
 
 #print(' ')
