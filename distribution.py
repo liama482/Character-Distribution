@@ -62,9 +62,10 @@ for vy in range (0,26):
 whiir=int(len(appear))
 
 tupps = zip((list(wappee)),(list(appear)))
-print(list(tupps))
-bupps = tupps.sort()
-print(list(bupps))
+Ltup = list(tupps)
+print(Ltup)
+bupps = Ltup.sort()
+print(bupps)
 """
 for s in range (0,whiir):
         tupps.appendfor r in range (0,appear[s]):
