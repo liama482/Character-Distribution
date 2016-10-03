@@ -3,7 +3,7 @@ distribution.py
 Author: Liam A
 Credit: http://stackoverflow.com/questions/16060899/alphabet-range-python,
 http://stackoverflow.com/questions/1712227/how-to-get-the-size-of-a-list
-
+http://stackoverflow.com/questions/6454894/reference-an-element-in-a-list-of-tuples
 Assignment:
 
 Write and submit a Python program (distribution.py) that computes and displays 
@@ -36,7 +36,7 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 
-"whooaa wah whohoho yeah well I got abbacedaga you just have a family cause moolaakayrassa quack!"
+whooaa wah whohoho yeah well I got abbacedaga you just have a family cause moolaakayrassa quack!
 """
 
 import string
@@ -61,14 +61,15 @@ for vy in range (0,26):
         wappee.append(alphabet[vy])
 whiir=int(len(appear))
 
-tupps = zip((list(wappee)),(list(appear)))
+tupps = zip((list(appear)),(list(wappee)))
 Ltup = list(tupps)
 print(Ltup)
-bupps = Ltup.sort()
-print(bupps)
-"""
-for s in range (0,whiir):
-        tupps.appendfor r in range (0,appear[s]):
-            print(wappee[s],  end='')
-        print(' ')
-"""
+Ltup.sorted([none[none[true]]])
+print(Ltup)
+
+#print(' ')
+for s in range(0,whiir):
+    for duck in range(0,Ltup[s][0]):
+        print(Ltup[s][1],end='')
+    print(' ')
+
