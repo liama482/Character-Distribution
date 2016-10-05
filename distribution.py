@@ -47,11 +47,13 @@ appear = []
 wappee = []
 
 def compare(a, b):
-    if b[1]>a[1]: #comparing numerical 2nd values in each tuple
-        return
+    if b[1]<a[1]: #comparing numerical 2nd values in each tuple
+        return True
     else:
         if b[0]>a[0]: #comparing string 1st values in each tuple
-            return
+            return True
+        else:
+            return False
 
 def bsort(seq, cmp):
     """
@@ -76,7 +78,7 @@ for vy in range (0,26):
     if nm!=0: #if the letter's in the string-
         appear.append(nm) #it notes the number of times the letter appears
         wappee.append(alphabet[vy]) #and what that letter is
-whiir=int(len(appear)) #number of entries in the list appear
+whiir=int(len(appear)) #number of entries in the list "appear"
 
 tupps = zip((list(wappee)),(list(appear))) #list of tuples, which displays a letter, and however many time a letter appears, if that letter appears at all
 Ltup = list(tupps) #an actual list of the tuples
@@ -86,7 +88,7 @@ print(Ltup)
 bsort(Ltup, compare)
 #Ltup.sort(reverse=True) #sorts the list of tuples alphabetically
 print(nLtup)
-
+    
 #print(' ')
 for s in range(0,whiir):
     for duck in range(0,nLtup[s][1]):
