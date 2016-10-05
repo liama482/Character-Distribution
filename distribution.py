@@ -47,7 +47,7 @@ appear = []
 wappee = []
 
 def compare(a, b):
-    if b[1]<a[1]: #comparing numerical 2nd values in each tuple
+    if b[1]>a[1]: #comparing numerical 2nd values in each tuple
         return True
     else:
         if b[0]>a[0]: #comparing string 1st values in each tuple
@@ -86,11 +86,10 @@ print(Ltup)
 #nLtup = sorted(sorted(Ltup, key = lambda x : x[1]), key = lambda x : x[0], reverse = False)  #Ltup sorted
 
 bsort(Ltup, compare)
-#Ltup.sort(reverse=True) #sorts the list of tuples alphabetically
-print(nLtup)
+print(Ltup)
     
 #print(' ')
 for s in range(0,whiir):
-    for duck in range(0,nLtup[s][1]):
-        print(nLtup[s][0],end='')
+    for duck in range(0,Ltup[s][1]):
+        print(Ltup[s][0],end='')
     print(' ')
