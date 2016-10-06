@@ -84,12 +84,10 @@ whiir=int(len(appear)) #number of entries in the list "appear"
 
 tupps = zip((list(wappee)),(list(appear))) #list of tuples, which displays a letter, and however many time a letter appears, if that letter appears at all
 Ltup = list(tupps) #an actual list of the tuples
-print(Ltup)
-#nLtup = sorted(sorted(Ltup, key = lambda x : x[1]), key = lambda x : x[0], reverse = False)  #Ltup sorted
+#print(Ltup)
 
 bsort(Ltup, compare)
-print(Ltup)
-    
+
 #print(' ')
 for s in range(0,whiir):
     for duck in range(0,Ltup[s][1]):
