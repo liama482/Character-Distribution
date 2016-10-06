@@ -49,12 +49,13 @@ wappee = []
 def compare(a, b):
     if b[1]<a[1]: #comparing numerical 2nd values in each tuple
             return True
+    elif b[1]==a[1]:
+        if b[0]>a[0]: #comparing string 1st values in each tuple
+            return True
+        else:
+            return False
     else:
         return False
-    #    if b[0]>a[0]: #comparing string 1st values in each tuple
-    #        return True
-    #    else:
-    #        return False
 
 def bsort(seq, cmp):
     """
